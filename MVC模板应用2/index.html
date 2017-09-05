@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="index.php?controller=Test&method=add" method="post" target="_self"
+      enctype="multipart/form-data">
+    文章标题:<input name="title" type="text">
+    <br><br>
+    文章内容：<input name="content" type="text">
+    <br><br>
+    文章图片:<input name="pic" type="file">
+    <br><br>
+    文章分类:
+    <select name="cateId">
+        <option value="1">随笔</option>
+        <option value="2">技术总结</option>
+        <option value="3">技术分享</option>
+    </select>
+    <br><br>
+    <input type="submit" value="提交">
+</form>
+
+</body>
+</html>
